@@ -1,0 +1,24 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${jwt.auth.converter.jwk-set-uri}
+          issuer-uri: ${jwt.auth.converter.issuer-uri}
+          secret: aB3xK9mP2qR5sT8vY1zC4eF7hJ0lN6oQ9rU2wX5zA8bD1gI4kM7pS0tV3yB6eH9j
+
+jwt:
+  auth:
+    converter:
+      resource-id: facture-service
+      principal-attribute: preferred_username
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.ms.facture_service: DEBUG
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always

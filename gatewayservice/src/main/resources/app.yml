@@ -1,0 +1,28 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: r1
+          uri: lb://produit-service/
+          predicates:
+            - Path=/produit-service/**
+        - id: r2
+          uri: lb://client-service/
+          predicates:
+            - Path=/client-service/**
+        - id: r3
+          uri: lb://factureservice/
+          predicates:
+            - Path=/facture-service/**
+        - id: r4
+          uri: lb://reglement-service/
+          predicates:
+            - Path=/reglement-service/**
+        - id: r5
+          uri: lb://authentificationservice/
+          predicates:
+            - Path=/auth-service/**
+
+spring.data.redis.host=redis
+spring.data.redis.port=6379
+
