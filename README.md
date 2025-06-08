@@ -38,7 +38,7 @@ Le projet est composé des microservices suivants :
 
 1. Cloner le repository :
 ```bash
-git clone https://github.com/votre-username/micro-commerce-backend.git
+git clone https://github.com/A-Hamdi1/micro-commerce-backend.git
 cd micro-commerce-backend
 ```
 
