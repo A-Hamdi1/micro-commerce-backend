@@ -127,10 +127,6 @@ Chaque service expose des endpoints Actuator pour le monitoring :
 4. Pousser vers la branche
 5. Créer une Pull Request
 
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
-
 ## Support
 
 Pour toute question ou problème, veuillez créer une issue dans le repository GitHub. 
